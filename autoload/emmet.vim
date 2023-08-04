@@ -1754,10 +1754,14 @@ let s:emmet_settings = {
 \            'html:5': "<!DOCTYPE html>\n"
 \                    ."<html lang=\"${lang}\">\n"
 \                    ."<head>\n"
-\                    ."\t<meta charset=\"${charset}\">\n"
+\                    ."\t<meta charset=\"${charset}\" />\n"
+\                    ."\t<meta name=\"viewport\" content=\"width=device-width\" />\n"
 \                    ."\t<title></title>\n"
+\                    ."\t<style></style>\n"
 \                    ."</head>\n"
-\                    ."<body>\n\t${child}|\n</body>\n"
+\                    ."<body>\n"
+\                    ."\t<script></script>\n"
+\                    ."</body>\n"
 \                    ."</html>",
 \        },
 \        'default_attributes': {
